@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { useAuth } from "../../context/auth";
 import { toast } from "react-toastify";
-import searchInput from "../Form/SearchInput";
+import SearchInput from "../Form/SearchInput";
 
 const Header = () => {
   const [auth, setAuth] = useAuth();

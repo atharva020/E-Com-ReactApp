@@ -13,7 +13,6 @@ const SearchInput = () => {
       );
       setValues({ ...values, results: data });
       navigate("/search");
-      console.log(error);
     } catch (error) {
       console.log(error);
     }
