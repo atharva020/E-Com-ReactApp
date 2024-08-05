@@ -4,6 +4,7 @@ import {
   deleteProductController,
   getProductController,
   getSingleProductController,
+  productCategoryController,
   productCountController,
   productFiltersController,
   productListController,
@@ -46,6 +47,8 @@ router.get("/search/:keywords", searchProductController);
 
 //similar product
 router.get("/related-product/:pid/:cid", relatedProductController);
+
+router.get("/prodct-category/:slug", productCategoryController);
 router.post(
   "/update-product",
   requireSignIn,
